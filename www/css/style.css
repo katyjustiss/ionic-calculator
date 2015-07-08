@@ -1,1 +1,9 @@
 /* Empty. Add your own CSS if you like */
+ion-content {
+  background: black;
+}
+
+.calc-bar h2 {
+  color: white;
+}
+

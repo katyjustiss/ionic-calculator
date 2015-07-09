@@ -33,44 +33,44 @@
           <h2>{{display}}</h2>
         </div>
         <div class="button-bar">
-          <a class="button button-calm">x<sup>2</sup></a>
-          <a class="button button-positive">sin</a>
-          <a class="button button-positive">cos</a>
-          <a class="button button-positive">tan</a>
+          <a class="button button-calm" ng-click="squared(display)">x<sup>2</sup></a>
+          <a class="button button-positive" ng-click="sin(display)">sin</a>
+          <a class="button button-positive" ng-click="cos(display)">cos</a>
+          <a class="button button-positive" ng-click="tan(display)">tan</a>
         </div>
         <div class="button-bar">
-          <a class="button button-calm">√</a>
-          <a class="button button-positive">sin<sup>-1</sup></a>
-          <a class="button button-positive">cos<sup>-1</sup></a>
-          <a class="button button-positive">tan<sup>-1</sup></a>
+          <a class="button button-calm" ng-click="squareRoot(display)">√</a>
+          <a class="button button-positive" ng-click="sin1(display)">sin<sup>-1</sup></a>
+          <a class="button button-positive" ng-click="cos1(display)">cos<sup>-1</sup></a>
+          <a class="button button-positive" ng-click="tan1(display)">tan<sup>-1</sup></a>
         </div>
         <div class="button-bar">
-          <a class="button button-stable">1</a>
-          <a class="button button-stable">2</a>
-          <a class="button button-stable">3</a>
-          <a class="button button-positive">%</a>
+          <a class="button button-stable" ng-click="updateDisplay(1)">1</a>
+          <a class="button button-stable" ng-click="updateDisplay(2)">2</a>
+          <a class="button button-stable" ng-click="updateDisplay(3)">3</a>
+          <a class="button button-positive" ng-click="setOperator('/')">&divide;</a>
         </div>
         <div class="button-bar">
-          <a class="button button-stable">4</a>
-          <a class="button button-stable">5</a>
-          <a class="button button-stable">6</a>
-          <a class="button button-positive">X</a>
+          <a class="button button-stable" ng-click="updateDisplay(4)">4</a>
+          <a class="button button-stable" ng-click="updateDisplay(5)">5</a>
+          <a class="button button-stable" ng-click="updateDisplay(6)">6</a>
+          <a class="button button-positive" ng-click="setOperator('*')">X</a>
         </div>
         <div class="button-bar">
-          <a class="button button-stable">7</a>
-          <a class="button button-stable">8</a>
-          <a class="button button-stable">9</a>
-          <a class="button button-positive">+</a>
+          <a class="button button-stable" ng-click="updateDisplay(7)">7</a>
+          <a class="button button-stable" ng-click="updateDisplay(8)">8</a>
+          <a class="button button-stable" ng-click="updateDisplay(9)">9</a>
+          <a class="button button-positive" ng-click="setOperator('+')">+</a>
         </div>
         <div class="button-bar">
-          <a class="button button-stable">0</a>
-          <a class="button button-stable"></a>
-          <a class="button button-stable">.</a>
-          <a class="button button-positive">-</a>
+          <a class="button button-stable" ng-click="updateDisplay(0)">0</a>
+          <a class="button button-stable" ng-click=""></a>
+          <a class="button button-stable" ng-click="updateDisplay('.')">.</a>
+          <a class="button button-positive" ng-click="setOperator('-')">-</a>
         </div>
         <div class="button-bar">
-          <a class="button button-assertive">clear</a>
-          <a class="button button-calm">=</a>
+          <a class="button button-assertive" ng-click="clear()">clear</a>
+          <a class="button button-calm" ng-click="equal(display)">=</a>
         </div>
       </ion-content>
     </ion-pane>
